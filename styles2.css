@@ -1,3 +1,10 @@
 ul{
     display: inline;
 }
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    width: 20px;
+
+  }
