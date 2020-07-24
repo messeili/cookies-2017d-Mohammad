@@ -3,16 +3,41 @@
 
 body{
     background-color: antiquewhite;
+        text-align: center;
+        margin: 0;
 }
 
-h1{
-    font-family: 'Muli', sans-serif;
-    text-align: center;
-    background-color: burlywood;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: inline;
+main{
+    height: fit-content;
+}
 
+ #loctable td, th{
+    border: 2px solid black;
+    padding: 5px 20px 5px 20px ;
+    font-size: 20px;
+
+}
+table{
+    display: inline-block;
+    border-collapse: collapse;
+}
+#locations p, #about p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+footer p{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    display: inline-block;
+    
+}
+#products img {
+    border: 1px solid black;
+    margin: 50px;
+    display: inline-block;
+    width: 200px;
 }
 
 img{
@@ -21,23 +46,100 @@ img{
     align-items: center;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: larger;
-    
 
-}
-nav{
-    background-color: transparent;
-}
-
-div{
+.stick {
     position: sticky;
+    top:0px;
+    z-index: 1;
+}
+header{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 20px darkgrey;
+}
+footer{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 20px darkgrey;
+    bottom: 0px;
+    height: 80px;
+    
     
 }
+header nav{
+    text-align: left;
 
-*{
+}
+nav div {
+    vertical-align: middle;
+    display: inline-block;
+    width:60%;
+    font-size: 20px;
+}
+nav a{
+    display: inline-block;
+    width:20%;
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+}
+nav h1{
+    display: inline-block;
+    margin-top: 0px;
+    width: 30%;
+    font-size: 35px;
+    font-family: 'Muli', sans-serif;
+    padding-top: 20px;
+    text-align: left;
+
+}
+nav img {
+    width: 120px; 
+}
+section{
+    padding: 5%;
+}
+
+#mainid td {
     text-align: center;
+    width: 80px;
+    height: 40px;
+    border: 2px solid black;
+
+  }
+
+  #mainid{
+      display: inline-block;
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin: 0;
+      margin-top: 100px;
+
+  }
+  #mainid tr:nth-child(even) {background-color: #f2f2f2;}
+
+  #mainid th {
+    text-align: center;
+    width: 80px;
+    height: 40px;
+    border: 3px solid black;
+  }
+
+  h2{
+      margin: 0;
+      display: inline-block;
+      font-size: 50px;
+  }
+
+  #sales section{
+    padding: 2%;
+}
+button{
+    background-color: bisque;
+    color: black;
+    font-weight: 700;
+    border-radius: 20px;
+    font-size: 25px;
+    box-shadow: #f1f1f1;
+    padding: 1%;
 }
