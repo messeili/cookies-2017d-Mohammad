@@ -11,7 +11,7 @@ main{
     height: fit-content;
 }
 
- #loctable td, th{
+ #loctable td, #loctable th{
     border: 2px solid black;
     padding: 5px 20px 5px 20px ;
     font-size: 20px;
@@ -21,7 +21,7 @@ table{
     display: inline-block;
     border-collapse: collapse;
 }
-#locations p, #about p{
+#locations p, #about p, legend{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
@@ -100,30 +100,25 @@ section{
     padding: 5%;
 }
 
-#mainid td {
-    text-align: center;
-    width: 80px;
-    height: 40px;
-    border: 2px solid black;
 
-  }
 
-  #mainid{
+#mainid{
       display: inline-block;
       border: 1px solid black;
       border-collapse: collapse;
       margin: 0;
-      margin-top: 100px;
+      margin-top: 70px;
+      width: 70%;
 
   }
   #mainid tr:nth-child(even) {background-color: #f2f2f2;}
 
-  #mainid th {
+  #mainid th,#mainid td {
     text-align: center;
     width: 80px;
     height: 40px;
-    border: 3px solid black;
-  }
+    border: 2px solid black;
+   } 
 
   h2{
       margin: 0;
@@ -132,7 +127,7 @@ section{
   }
 
   #sales section{
-    padding: 2%;
+    padding: 5%;
 }
 button{
     background-color: bisque;
@@ -142,4 +137,20 @@ button{
     font-size: 25px;
     box-shadow: #f1f1f1;
     padding: 1%;
+}
+
+fieldset{
+    display: inline-block;
+    width: fit-content;
+}
+
+#tableForm td{
+    text-align: left;
+    
+}
+    
+
+label, input{
+   font-size: 17px; 
+   margin: 2px;
 }

@@ -14,10 +14,9 @@
             <img src="img/salmon.png" alt="salamon">
             <h1>Salmon cookies</h1>
             <div>
-                <a href="#about">About</a>
-                <a href="#products">Products</a>
-                <a href="#locations">Locations</a>
-                <a href="sales.html">Sales</a>
+                <a href="#Form">Form</a>
+                <a href="#result">Results</a>
+                <a href="index.html">Home</a>
             </div>
         </nav>
     </header>
@@ -26,38 +25,38 @@
             <a href="index.html"><button> Back to Main Page </button>
             </a>
         </section>
-        <section>
+        <section id="Form">
             <form id="myForm">
                 <fieldset>
-                    <legend>Select a Branch</legend>
-                    <table>
+                    <legend>Add a Branch!!</legend>
+                    <table id="tableForm">
                         <tbody>
                             <tr>
-                                <td><label for="branch-name">Choose a Branch</label></td>
-                                <td><input id="branch-name" type="text" name="branchName" placeholder="Branch Name" required> </td>
+                                <td><label for="branchName">Choose a Branch</label></td>
+                                <td><input id="branchName" type="text" name="branchName" placeholder="Branch Name" required> </td>
                             </tr>
                             <tr>
-                                <td><label for="min-cus">Min</label></td>
-                                <td><input id="min-cus" type="number" name="MinCus" placeholder="Min Customer/Hr" required></td>
+                                <td><label for="minCustPerH">Min</label></td>
+                                <td><input id="minCustPerH" type="number" name="minCustPerH" placeholder="Min Customer/Hr" required></td>
                             </tr>
                             <tr>
-                                <td><label for="max-cus">Max</label></td>
-                                <td><input id="max-cus" type="number" name="MaxCus" placeholder="Max Customer/Hr" required></td>
+                                <td><label for="maxCusPerH">Max</label></td>
+                                <td><input id="maxCusPerH" type="number" name="maxCusPerH" placeholder="Max Customer/Hr" required></td>
                             </tr>
                             <tr>
-                                <td><label for="avg-cookeis">Avarege Cookeis</label></td>
-                                <td><input id="avg-cookeis" type="number" name="avg-cookeis" placeholder="Enter Average Cookeis/Hr" required></td>
+                                <td><label for="cookeisPerHour">Avarege Cookeis</label></td>
+                                <td><input id="cookeisPerHour" type="number" step="any" name="cookeisPerHour" placeholder="Enter Average Cookeis/Hr" required></td>
                             </tr>
                             <tr>
                                 <td></td>
-                                <td><input type="submit" value="Confirm"></td>
+                                <td id="lastTd"><input type="submit" value="Confirm"></td>
                             </tr>
                         </tbody>
                     </table>
                 </fieldset>
             </form>
         </section>
-        <section>
+        <section id="result">
             <table id="mainid">
             </table>
         </section>
@@ -67,5 +66,10 @@
     <script src="app.js">  </script>
 
 </body>
+<footer>
+    <p>
+        All Rights Reserved @Salmon Cookies INC.
+    </p>
+</footer>
 
 </html>
