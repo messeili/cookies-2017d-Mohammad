@@ -82,6 +82,7 @@ function tableFooter() {
                 total = total + allLocations[j].totalCookeisPerDay;
             }
             columnTwo.textContent = (total)
+            total = 0;
 }
 
 function tableHeader() {
@@ -112,6 +113,31 @@ var tokyo = new Branch('Tokyo', 3, 24, 1.2);
 var dubai = new Branch('Dubai', 11, 38, 3.7);
 var paris = new Branch('Paris', 20, 38, 2.3);
 var lima = new Branch('Lima', 2, 16, 4.6);
+
+
+var myForm = document.getElementById('myForm');
+myForm.addEventListener('submit',clickHandler);
+
+function clickHandler(){
+    event.preventDefault();
+    var nameValue = event.target.branchName.value;
+    console.log(nameValue);
+    var minCustPerHeValue = event.target.minCustPerH.value;
+    console.log(minCustPerHeValue);
+    var maxCusPerHrValue = event.target.maxCusPerH.value;
+    console.log(maxCusPerHrValue);
+    var cookeisPerHourValue = event.target.cookeisPerHour.value;
+    console.log(cookeisPerHourValue);
+
+
+    var newLocation = new Branch(nameValue,minCustPerHeValue,maxCusPerHrValue,cookeisPerHourValue);
+    console.log(allLocations);
+    newLocation.generateRandomNumberOfCustomers();
+    newLocation.calculateCookeisPerHour();
+    parentElement.removeChild(parentElement.lastChild)
+    newLocation.printFun();
+    tableFooter();
+}
 
 for (let index = 0; index < allLocations.length; index++) {
     allLocations[index].generateRandomNumberOfCustomers();
